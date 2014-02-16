@@ -1,21 +1,13 @@
-
 <?php
-
     include 'C:\wamp\www\UI\public_html\function.php';
-    $conn = connect();  
-?>
+    connect();
 
+?>
+<!DOCTYPE html>
 <html>
     <head></head>
     <body>
-       <?php
-       if (isset($_POST['submit'])){
-           
-           mysqli_query($insert_data_query);
-       }
-       else{
-       
-       ?>
+
     <form method="post" action="">
         <fieldset>
             <legend>Personal Data</legend>
@@ -38,14 +30,13 @@
                    
                <?php ddl_query()?>
             </select>
-            <?php close()?>
+            <?php close($con) ?>
             <br />
             <label>Decoration: </label><input type="text" name="decoration" /><br />
         </fieldset>
         <input type="submit" name="submit" />
     </form>
-    <?php }?>
+
    
     </body>
 </html>
-
