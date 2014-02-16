@@ -4,3 +4,5 @@
    define("DB_PASS", "");
    define("DB_NAME", "pricer");
 ?>
+
+<!--yossi vakninc -->
